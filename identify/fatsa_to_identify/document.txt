@@ -1,0 +1,2 @@
+存放短片段模式的识别结果
+Store the recognition results of short fragment patterns

@@ -1,0 +1,2 @@
+将fa里的文件连接起来，便于后续分析(可选)
+Link files in the fa dir for subsequent analysis (optional)

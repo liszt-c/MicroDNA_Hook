@@ -1,0 +1,2 @@
+存放训练结果的ROC结果，可通过ROC_draw.py来绘制ROC图像。
+ROC results that store training results can be used to draw ROC images using ROC_draw.py.

@@ -1,0 +1,2 @@
+存放长片段模式的识别结果。
+Store recognition results for long fragment patterns.
