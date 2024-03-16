@@ -4,16 +4,16 @@
 
 ``` 
 -|datasets- |eccDNA	    #Insert the eccDNA sequence, .fa
- |		    |
- | 		    |otherDNA	#Put in other DNA sequences, .fa
+ |		   |
+ | 		   |otherDNA	#Put in other DNA sequences, .fa
  |
 -|cnvkit_do- |out	#cnvkit output file
- |		     |
- | 		     |fa	# stored intermediate and result file 
+ |		    |
+ | 		    |fa	# stored intermediate and result file 
  |
 -|identify- |fatsa_to_identify	#Short sequence identification method default folder
- |		    |
- | 		    |long_segment_to_identify #Long sequence identification method default folder
+ |		   |
+ | 		   |long_segment_to_identify #Long sequence identification method default folder
  |
  |ROC			#ROC output and image drawing folder
  |
@@ -23,10 +23,10 @@
 
 ### File
 -|preprocessing-	|SamtoolBash.sh	#The bash command provides the samtools interface
- |			        |
- |			        |count*.py		#The xcel documentation is read and SamtoolBash.sh is called to cut the eccDNA sequence
- |			        |
- |			        |cout_other*.py	#Read the xcel documentation and call SamtoolBash.sh to cut other DNA sequences
+ |			       |
+ |			       |count*.py		#The xcel documentation is read and SamtoolBash.sh is called to cut the eccDNA sequence
+ |			       |
+ |			       |cout_other*.py	#Read the xcel documentation and call SamtoolBash.sh to cut other DNA sequences
  |
 -|dataprocess*.py	#The DNA sequence was read and the sequence was converted to a matrix
  |
