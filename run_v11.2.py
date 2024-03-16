@@ -239,7 +239,7 @@ if __name__ == '__main__':
     parser.add_argument('--pattern', type=str,help='Input Type: short_sequence,long_segment')
     ###短序列可以通过文件输入、手动输入，如果不指明文件或手动输入则使用./fatsa_to_identify文件夹下所有文件
     ###长片段只有一种模式，读取./long_segment_to_identify文件夹下所有文件，同时可以使用阈值
-    parser.add_argument('--model',default = "module_1.pth", type=str,
+    parser.add_argument('--model',default = "module.pth", type=str,
                         help='model name, The model needs to be in the folder ./save')         #导入模型
     parser.add_argument('--file_path',default ='none',type=str,
                         help='If no parameter is provided, all files in the path ./identify/fatsa_to_identify are used.  If it is not in the run folder, you must specify the path')
