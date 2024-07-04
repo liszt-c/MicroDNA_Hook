@@ -52,7 +52,7 @@ ps: * Refers to having multiple files or version numbers for different models
 ### Function Overview
 WGS data preprocessing (count*.py, SamtoolBash.sh)<br /> Model training (dataprocess.py, dataloader*.py, train_attention.py)<br /> Model validation (verification.py)<br /> Model invocation API (run.py)<br /> Extraction of MicroDNA based on CNVs (cnvkit_run.py)
 ### Configuration Commands
-CUDA version > 11.7, or use another version of PyTorch<br />
+CUDA version > 11.7, or use another version of PyTorch.If python versions are not compatible, you may need to delete torch references from requirements.txt.<br />
 ``` 
 conda/source activate/creat YOUR_ENV_NAME
 pip install -r requirements.txt
@@ -111,7 +111,7 @@ python ROC_draw.py
 WGS sequencing data files (can be SRA files .sra or fastq files .fq), hg19 standard sequence<br /> hg19.fa (from NCBI) and alignment reference files provided by CNVkit<br /> hg19_cnvkit_filtered_ref.cnn (from CNVkit) should be placed in the MicroDNA_Hook\cnvkit\cnvkit_do folder<br />
 
 tip: CNVkit may have issues when invoked in Windows 11 systems or Windows Subsystem for Linux. Please refer to CNVkit usage instructions. After calculation, place the resulting result.call.cns file in MicroDNA_Hook\cnvkit_do\out and continue to run cnvkit_run.py.<br />
-
+If you start with fastq data, you need to install bowtie2. If you start with sra data, you need to install sra tools.<br />
 #### Command to Identify MicroDNA in CNVs Regions
 ``` 
 python cnvkit_run.py
