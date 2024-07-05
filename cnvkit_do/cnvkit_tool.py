@@ -30,8 +30,8 @@ if __name__ == '__main__':
     if search2 == []:
         cmd0 = os.system('bowtie2-build -f hg19.fa hg19')
         print(cmd0)
-
-
+    # 对于单端测序
+    # bowtie2 -p 10 -x hg19 -U input.fq | samtools sort -O bam -@ 12 -o - > output.bam
     cmd2 = os.system('bowtie2 -p 12 -x hg19 -1 '+str(SeqName)+'_1.fastq -2 '+str(SeqName)+'_2.fastq | samtools sort -@12 -o '+str(SeqName)+'.bam')
     print(cmd2)
 
