@@ -36,12 +36,12 @@ if __name__ == '__main__':
     print(cmd2)
 
     ##-p '+str(thread)
-    cmd3 = os.system('cnvkit batch -m wgs -r hg19_cnvkit_filtered_ref.cnn '+str(thread)+' -d ./out '+str(SeqName)+'.bam')
+    cmd3 = os.system('cnvkit.py batch -m wgs -r hg19_cnvkit_filtered_ref.cnn '+str(thread)+' -d ./out '+str(SeqName)+'.bam')
     print(cmd3)
 
-    cmd4 = os.system('cnvkit segment ./out/'+str(SeqName)+'.cnr '+str(thread)+' -m cbs -o ./out/result.cns')
+    cmd4 = os.system('cnvkit.py segment ./out/'+str(SeqName)+'.cnr '+str(thread)+' -m cbs -o ./out/result.cns')
     print(cmd4)
 
-    cmd5 = os.system('cnvkit call ./out/result.cns -o ./out/result.call.cns')
+    cmd5 = os.system('cnvkit.py call ./out/result.cns -o ./out/result.call.cns')
     print(cmd5)
 
