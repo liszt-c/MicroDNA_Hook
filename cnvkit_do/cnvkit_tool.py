@@ -4,8 +4,8 @@ from glob import glob
 import argparse
 
 
-SeqName = 'SRR2012870'
-thread = '-p 12'
+SeqName = 'SRR61569A'
+thread = '-p 10'
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'RUN')
     parser.add_argument('--thread',default = "-p 12", type=str,
@@ -15,7 +15,6 @@ if __name__ == '__main__':
     parser.add_argument('--limit',default = "0.95",type=str,
                         help='parameter:strict，normal，relax. relax pattern can identify more but with less precision but strict pattern opposite.')
     args = parser.parse_args()
-    model_name = args.model
 
 
     search = 0
