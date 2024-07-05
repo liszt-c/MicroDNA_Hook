@@ -15,6 +15,10 @@
  |		   |
  | 		   |long_segment_to_identify #Long sequence identification method default folder
  |
+-|other_model- |transformer2.py #transformer model
+ |		          |
+ | 		          |resnet50.py
+ |
  |ROC			#ROC output and image drawing folder
  |
 -|run			#Training intermediate parameter storage folder
@@ -35,8 +39,6 @@
 -|ResNet_Attention.py	#Residual convolution model with attention mechanism
  |
 -|ResAttention.py	#Network models of interspersed attention mechanisms
- |
--|transformer2.py #transformer model
  |
 -|train*.py		#Train and test
  |
