@@ -41,10 +41,10 @@ def run_cnvkit():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'RUN')
-    parser.add_argument('--model',default = "module_dict_38.pth", type=str,
+    parser.add_argument('--model',default = "6.pth", type=str,
                         help='model name, The model needs to be in the folder ./save')
-    parser.add_argument('--run',default = "run_v11.2.py", type=str,
-                        help='run flie name. default run_v11.2.py')
+    parser.add_argument('--run',default = "run_v11.3.py", type=str,
+                        help='run flie name. default run_v11.3.py')
     parser.add_argument('--limit',default = "0.95",type=str,
                         help='parameter:strict，normal，relax. relax pattern can identify more but with less precision but strict pattern opposite.')
     args = parser.parse_args()
