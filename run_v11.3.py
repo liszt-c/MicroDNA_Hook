@@ -32,9 +32,10 @@ torch.set_printoptions(profile="full")
 from ResAttention import ResNetSelfAttention
 import datetime
 
-
+# Slide the window for the first time
 norm_length = 400
 STEP1 = 10
+# Slide the window for the second time
 WINDOW2 = 10
 STEP2 = 3
 
