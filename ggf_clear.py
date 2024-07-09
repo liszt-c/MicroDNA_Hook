@@ -37,7 +37,6 @@ def process_gff_file(input_filename, output_filename):
                 # 不是特殊行的话，写入缓存即可
                 current_section.append(line)  
 
-# Example usage:
 input_file = 'ecc.gff'
 output_file = 'ecc_clear.gff'
 process_gff_file(input_file, output_file)
