@@ -1,0 +1,42 @@
+experiment:
+  name: "MicroDNA_Map_vs_CircleMap_SpikeIn_Random"
+  seed: 42
+  output_dir: "./benchmark/results_random"
+
+genome:
+  reference: "./benchmark/hg19.fa"
+  reference_name: "hg19"
+  gap_bed: null
+  quick_chromosomes: ["chr21", "chr22"]
+  background_chroms: ["chr1", "chr2", "chr3", "chr4", "chr5"]
+  cnvkit_reference: "./cnvkit_do/hg19_cnvkit_filtered_ref.cnn"
+
+simulation:
+  num_sites: 1000
+  quick_num_sites: 100
+  min_length: 200
+  max_length: 800
+  copy_numbers: [1, 5, 10, 50]
+  background_coverage: 30
+  input_fasta_dir: null
+  use_real_microdna: false
+
+sequencing:
+  read_length: 150
+  insert_size_mean: 300
+  insert_size_std: 50
+  error_rate: 0.001
+
+circseq:
+  junction_enrichment: 0.7
+  coverage_per_copy: 30
+
+detection:
+  microdna_map_model: "./save/6.pth"
+  microdna_map_limit: "0.99"
+  circlemmap_threads: 8
+  threads: 8
+
+evaluation:
+  overlap_threshold: 0.5
+  lod_recall_threshold: 0.8
